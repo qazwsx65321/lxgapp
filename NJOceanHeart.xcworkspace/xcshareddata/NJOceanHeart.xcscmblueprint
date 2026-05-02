@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5dab658f-6924-414e-b8d7-8da7f514896f++1341",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5dab658f-6924-414e-b8d7-8da7f514896f++1341" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5dab658f-6924-414e-b8d7-8da7f514896f++1341" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ADCAF05E-9535-4B7B-9D86-7264A6977D1B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5dab658f-6924-414e-b8d7-8da7f514896f++1341" : "NJOceanHeart\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NJOceanHeart",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NJOceanHeart.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.2.116\/svn\/IOS%E5%B7%A5%E7%A8%8B%E9%A1%B9%E7%9B%AE",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5dab658f-6924-414e-b8d7-8da7f514896f++1341"
+    }
+  ]
+}

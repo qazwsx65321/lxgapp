@@ -1,0 +1,129 @@
+//
+//  Ocean_MessageCell.m
+//  NJOceanHeart
+//
+//  Created by 陈志伟 on 17/8/10.
+//  Copyright © 2017年 Xuanr. All rights reserved.
+//
+
+#import "Ocean_MessageCell.h"
+
+@interface Ocean_MessageCell ()
+
+@property (nonatomic,strong) UIView *bgView;
+@property (nonatomic,strong) UIImageView *picImageView;
+@property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UILabel *stateLabel;
+@property (nonatomic,strong) UILabel *contentLabel;
+
+@end
+
+@implementation Ocean_MessageCell
+
++ (instancetype)cellWithTableView:(UITableView *)tableView
+{
+    static NSString *cellsign = @"Ocean_MessageCell";
+    Ocean_MessageCell *cell  = [tableView dequeueReusableCellWithIdentifier:cellsign];
+    if (cell ==nil) {
+        cell  = [[Ocean_MessageCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellsign];
+    }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.backgroundColor = [UIColor clearColor];
+    return cell;
+}
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
+    {
+        [self setupControls];
+    }
+    return self;
+}
+
+-(void)setupControls{
+    
+    self.bgView = [[UIView alloc] init];
+    self.bgView.backgroundColor = [UIColor whiteColor];
+    [self.contentView addSubview:self.bgView];
+    
+    self.picImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@""]];
+//    self.picImageView.backgroundColor = [UIColor redColor];
+    [self.bgView addSubview:self.picImageView];
+    
+    self.stateLabel = [[UILabel alloc] init];
+    self.stateLabel.font = [UIFont systemFontOfSize:14];
+    self.stateLabel.textColor = [UIColor lightGrayColor];
+    [self.bgView addSubview:self.stateLabel];
+    
+    self.titleLabel = [[UILabel alloc] init];
+    self.titleLabel.font = [UIFont systemFontOfSize:14];
+    self.titleLabel.textAlignment = NSTextAlignmentRight;
+    [self.bgView addSubview:self.titleLabel];
+    
+    self.contentLabel = [[UILabel alloc] init];
+    self.contentLabel.font = [UIFont systemFontOfSize:14];
+    self.contentLabel.textColor = [UIColor lightGrayColor];
+    [self.bgView addSubview:self.contentLabel];
+    
+}
+
+- (void)setCellFrame:(Ocean_MessageFrame *)cellFrame {
+    _cellFrame = cellFrame;
+    
+    
+    _bgView.frame = cellFrame.bgViewF;
+    
+    _picImageView.frame = cellFrame.picImageViewF;
+    _titleLabel.frame = cellFrame.titleLabelF;
+    _stateLabel.frame = cellFrame.stateLabelF;
+    _contentLabel.frame = cellFrame.contentLabelF;
+    
+    if ([@"1" isEqualToString:cellFrame.infoDic[@"deviceid"]]) {
+        _stateLabel.text = @"公告通知";
+    }else {
+        _stateLabel.text = @"提醒通知";
+    }
+    
+    [_picImageView sd_setImageWithURL:[NSURL URLWithString:cellFrame.infoDic[@"imgurl"]] placeholderImage:[UIImage imageNamed:@"news"]];
+    
+    _titleLabel.text = cellFrame.infoDic[@"title"];
+    _contentLabel.text = cellFrame.infoDic[@"content"];
+    
+}
+
+@end
+
+
+
+
+@implementation Ocean_MessageFrame
+
+- (void)setInfoDic:(NSDictionary *)infoDic {
+    _infoDic = infoDic;
+    
+    
+    _bgViewF = CGRectMake(0, 0, screen_Width, 100);
+    
+    _picImageViewF.size = CGSizeMake(30, 30);
+    _picImageViewF.origin.x = 10;
+    _picImageViewF.origin.y = 15;
+    
+    _stateLabelF = CGRectMake(50, 10, screen_Width/2.f - 50, 20);
+    _titleLabelF = CGRectMake(screen_Width/2.f, 10, screen_Width/2.f - 10, 20);
+    
+    
+    CGSize conS = [StringSizeModel sizeWithText:infoDic[@"content"] font:[UIFont systemFontOfSize:14] maxW:screen_Width - 20];
+    _contentLabelF = CGRectMake(50, CGRectGetMaxY(_stateLabelF), screen_Width - 60, conS.height);
+    
+    _bgViewF = CGRectMake(0, 0, screen_Width, CGRectGetMaxY(_contentLabelF)+10);
+    
+    _cellHeight = CGRectGetMaxY(_bgViewF)+1;
+    
+    
+    
+}
+
+@end
+
+

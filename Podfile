@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NJOceanHeart' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  
+ 	pod 'BaiduMapKit','3.3.1' #百度地图SDK
+ 	pod 'AFNetworking'
+ 	pod 'MJRefresh'
+	pod 'Masonry'
+#	pod 'RongCloudIM/CallLib'
+#	pod 'RongCloudIM/CallKit'
+    pod 'YUSegment'
+    pod 'UICKeyChainStore'
+    pod 'RongCloudIM/IMLib'
+    pod 'RongCloudIM/IMKit','~> 5.1.3'
+#    pod 'RongCloudIM/RedPacket','2.8.22'
+    pod 'EBForeNotification'
+#    pod 'BRPickerView'
+    pod 'IQKeyboardManager'
+    # 主模块(必须)
+    pod 'ShareSDK3'
+    # Mob 公共库(必须) 如果同时集成SMSSDK iOS2.0:可看此注意事项：http://bbs.mob.com/thread-20051-1-1.html
+    pod 'MOBFoundation'
+    # UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+    pod 'ShareSDK3/ShareSDKUI'
+    # 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+    pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+    pod 'ShareSDK3/ShareSDKExtension'
+    pod 'JPush'
+    
+#    pod 'Pgyer'
+#    pod 'PgyUpdate'
+#    pod 'TFHpple'
+  # Pods for NJOceanHeart
+end

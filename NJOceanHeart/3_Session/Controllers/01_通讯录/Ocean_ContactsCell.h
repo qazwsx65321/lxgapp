@@ -1,0 +1,17 @@
+//
+//  Ocean_ContactsCell.h
+//  NJOceanHeart
+//
+//  Created by 陈志伟 on 17/7/28.
+//  Copyright © 2017年 Xuanr. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface Ocean_ContactsCell : UITableViewCell
+
+@property (nonatomic,assign) NSInteger type;
+
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+
+@end

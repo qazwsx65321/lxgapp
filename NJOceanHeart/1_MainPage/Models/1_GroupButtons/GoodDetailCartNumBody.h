@@ -1,0 +1,31 @@
+//
+//  GoodDetailCartNumBody.h
+//  NinthTribe-O
+//
+//  Created by 史伟文 on 2017/4/3.
+//  Copyright © 2017年 NanJing. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface GoodDetailCartNumBody : NSObject
+
+@end
+
+@interface GoodDetailCartNumReqBody : GoodDetailCartNumBody
+
+@property (nonatomic, copy)NSString *JUDGEMETHOD;
+@property (nonatomic, copy)NSString *m_name;
+@property (nonatomic, copy)NSString *m_session;
+@property (nonatomic, copy)NSString *m_userid;
+
+@end
+
+@interface GoodDetailCartNumRespBody : GoodDetailCartNumBody
+
+@property (nonatomic, copy)NSString *ERRORCODE;
+@property (nonatomic, copy)NSString *ERRORDESTRIPTION;
+@property (nonatomic, copy)NSString *m_cartnum;
+@property (nonatomic, copy)NSString *m_cartprice;
+
+@end

@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  NJOceanHeart
+//
+//  Created by qiushi on 2017/8/15.
+//  Copyright © 2017年 Xuanr. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#import "CommonMacro.h"
+#import "NSDictionary+Property.h"
+#import "NSObject+InitProperty.h"
+#import "NSString+TransformationTime.h"
+#import "NSString+XRPredicate.h"
+#import "Singleton.h"
+#import "StringSizeModel.h"
+#import "UIColor+FTColor.h"
+#import "XRConst.h"
+#import "Ocean_RevicedImageTool.h"
+#import "Ocean_UserInfo.h"
+#import "UIView+FTUtil.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "HessianKit.h"
+#import "MBProgressHUD+JDragon.h"
+#import "MJRefresh.h"
+#import "UIView+DWQEmptyView.h"
+#import <Masonry.h>
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "UINavigationController_Ocean_Nav.h"
+#import "Ocean_NavigationController.h"
+#import "LoginController.h"
+#import "NSData+AES256.h"
+#import "NSString+TransformationTime.h"
+
+#import "JXTAlertManagerHeader.h"
+
+#import <RongIMKit/RongIMKit.h>
+//#import <Foundation/Foundation.h>
+#import "KX9RechargeOrderTool.h"
+#import <UIKit/UIKit.h>
+#import "KX9UploadLocation.h"
+#import "Ocean_JudgeAlterView.h"
+#import "JRDB.h"
+#import "Ocean_CardView.h"
+
+#import "Ocean_DataTools.h"
+#import "XMGAudioTool.h"
+
+#endif /* PrefixHeader_pch */

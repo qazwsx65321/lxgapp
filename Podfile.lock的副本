@@ -1,0 +1,107 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.3.1)
+  - EBForeNotification (1.0.7)
+  - IQKeyboardManager (4.0.11)
+  - JCore (1.1.5)
+  - JPush (3.0.6):
+    - JCore (~> 1.1.1)
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+  - MOBFoundation (3.0.1)
+  - RongCloudIM/CallKit (2.8.32):
+    - RongCloudIM/CallLib
+    - RongCloudIM/IMKit
+  - RongCloudIM/CallLib (2.8.32):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMKit (2.8.32):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.32)
+  - ShareSDK3 (4.0.1):
+    - MOBFoundation
+    - ShareSDK3/ShareSDK (= 4.0.1)
+  - ShareSDK3/ShareSDK (4.0.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKExtension (4.0.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/QQ (4.0.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (4.0.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/WeChat (4.0.1):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKUI (4.0.1):
+    - MOBFoundation
+  - UICKeyChainStore (2.1.1)
+  - YUSegment (1.0.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - BaiduMapKit (= 3.3.1)
+  - EBForeNotification
+  - IQKeyboardManager
+  - JPush
+  - Masonry
+  - MJRefresh
+  - MOBFoundation
+  - RongCloudIM/CallKit
+  - RongCloudIM/CallLib
+  - RongCloudIM/IMKit
+  - RongCloudIM/IMLib
+  - ShareSDK3
+  - ShareSDK3/ShareSDKExtension
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - ShareSDK3/ShareSDKUI
+  - UICKeyChainStore
+  - YUSegment
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BaiduMapKit
+    - EBForeNotification
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - Masonry
+    - MJRefresh
+    - MOBFoundation
+    - RongCloudIM
+    - ShareSDK3
+    - UICKeyChainStore
+    - YUSegment
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: 9e8ff80bbcfb8f96b4a58b2844d728590dac90ca
+  EBForeNotification: d2426fa084f7af912c665b80529cfb3fe5dbdb79
+  IQKeyboardManager: 83eae5318483a34eb2069ef413d195b97605232e
+  JCore: 9bd9c770c877c583d98b90a68792b8361974c231
+  JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MOBFoundation: 08328ccde124b687ac5e4367c2ccfc5b4d0235b7
+  RongCloudIM: 48bfc2fcb8d7cae8ce1e19cb5fb26d6d90616375
+  ShareSDK3: 6983a9b5209b63f2f4297fb0328d9a8dd6abd5f1
+  UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
+  YUSegment: 6e527a2e4ad60404ef67bd766b4dcf6d59419c9c
+
+PODFILE CHECKSUM: 6cadb8e31679d62e8ec2eb6ba19e88e6529cbd8d
+
+COCOAPODS: 1.11.3
