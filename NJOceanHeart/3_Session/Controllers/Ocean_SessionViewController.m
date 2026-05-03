@@ -85,7 +85,6 @@
     
     [bgView addSubview:segmentController];
     
-    
     UIView *sepLine = [[UIView alloc] initWithFrame:CGRectMake(0, 39, screen_Width/2.f, 1)];
     sepLine.backgroundColor = [UIColor colorWithHexString:Navi_Background_Color];
     [bgView addSubview:sepLine];
@@ -123,7 +122,12 @@
             break;
         case 1:
         {
-            //                self.contactController.view.frame = CGRectMake(0, 104, screen_Width, screen_Height - 104 - 49);
+            //self.contactController.view.frame = CGRectMake(0, 104, screen_Width, screen_Height - 104 - 49);
+            //20260503 add
+            if(screen_Height >= 812){
+                self.contactController.view.frame = CGRectMake(0, 104 + 30, screen_Width, screen_Height - 104 - 49);
+            }
+            
             [self.view addSubview:self.contactController.view];
             [self.contactController GET_GetFriendsInterface];
         }
