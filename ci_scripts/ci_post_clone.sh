@@ -1,21 +1,14 @@
-{\rtf1\ansi\ansicpg936\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+#!/bin/bash
+echo "Copying libstdc++.6.0.9.tbd from local repo..."
 
-\f0\fs24 \cf0 #!/bin/bash\
-echo "Copying libstdc++.6.0.9.tbd from local repo..."\
-\
-SDK_PATHS=(\
-    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/"\
-    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/"\
-)\
-\
-for SDK_PATH in "$\{SDK_PATHS[@]\}"; do\
-    if [ -d "$SDK_PATH" ]; then\
-        cp "$CI_WORKSPACE/ci_libs/libstdc++.6.0.9.tbd" "$\{SDK_PATH\}libstdc++.6.0.9.tbd"\
-        echo "nstalled to $SDK_PATH"\
-    fi\
-done}
+SDK_PATHS=(
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/"
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/lib/"
+)
+
+for SDK_PATH in "${SDK_PATHS[@]}"; do
+    if [ -d "$SDK_PATH" ]; then
+        cp "$CI_WORKSPACE/ci_libs/libstdc++.6.0.9.tbd" "${SDK_PATH}libstdc++.6.0.9.tbd"
+        echo " Installed to $SDK_PATH"
+    fi
+done
