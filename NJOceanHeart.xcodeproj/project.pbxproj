@@ -502,7 +502,6 @@
 		795F68241F45AFE900D7FC2E /* Ocean_ConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F68231F45AFE900D7FC2E /* Ocean_ConversationController.m */; };
 		795F68271F45B65800D7FC2E /* Ocean_GroupInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F68261F45B65800D7FC2E /* Ocean_GroupInfoController.m */; };
 		79608A0F1FB53C9400D2B819 /* Ocean_MessageDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79608A0E1FB53C9400D2B819 /* Ocean_MessageDetailController.m */; };
-		796298DB1F41BA6D006756B9 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796298DA1F41BA6D006756B9 /* AgoraRtcEngineKit.framework */; };
 		796298DD1F41BA86006756B9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 796298DC1F41BA86006756B9 /* libresolv.tbd */; };
 		796298DF1F41BAF5006756B9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 796298DE1F41BAF5006756B9 /* GLKit.framework */; };
 		7964C7831F91A51D0027FEDC /* XDGonggao.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7964C7821F91A51D0027FEDC /* XDGonggao.gif */; };
@@ -561,7 +560,6 @@
 		79CCA6D41F2896FF0000BE11 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6D31F2896FF0000BE11 /* libc++.tbd */; };
 		79CCA6D61F2897030000BE11 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6D51F2897030000BE11 /* libc++abi.tbd */; };
 		79CCA6D81F28970D0000BE11 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6D71F28970D0000BE11 /* libsqlite3.tbd */; };
-		79CCA6DA1F2897170000BE11 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6D91F2897170000BE11 /* libstdc++.tbd */; };
 		79CCA6DC1F2897210000BE11 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6DB1F2897210000BE11 /* libxml2.tbd */; };
 		79CCA6DE1F2897280000BE11 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6DD1F2897280000BE11 /* libz.tbd */; };
 		79CCA6E01F28972F0000BE11 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CCA6DF1F28972F0000BE11 /* MapKit.framework */; };
@@ -1788,7 +1786,6 @@
 				796298DF1F41BAF5006756B9 /* GLKit.framework in Frameworks */,
 				796298DD1F41BA86006756B9 /* libresolv.tbd in Frameworks */,
 				79CCA6F01F28976F0000BE11 /* VideoToolbox.framework in Frameworks */,
-				796298DB1F41BA6D006756B9 /* AgoraRtcEngineKit.framework in Frameworks */,
 				79CCA6C81F2896D20000BE11 /* CoreGraphics.framework in Frameworks */,
 				28CE1E9D1F33303200DDD8C5 /* AlipaySDK.framework in Frameworks */,
 				28CE1E9F1F33303200DDD8C5 /* libssl.a in Frameworks */,
@@ -1808,7 +1805,6 @@
 				79CCA6E21F2897360000BE11 /* OpenGLES.framework in Frameworks */,
 				79CCA6E01F28972F0000BE11 /* MapKit.framework in Frameworks */,
 				79CCA6DC1F2897210000BE11 /* libxml2.tbd in Frameworks */,
-				79CCA6DA1F2897170000BE11 /* libstdc++.tbd in Frameworks */,
 				28717E4F1FD6427A006AA38C /* JrmfPacketKit.framework in Frameworks */,
 				79CCA6D81F28970D0000BE11 /* libsqlite3.tbd in Frameworks */,
 				79CCA6D61F2897030000BE11 /* libc++abi.tbd in Frameworks */,
@@ -5846,8 +5842,7 @@
 					"-l\"sqlite3\"",
 					"-l\"sqlite3.0\"",
 					"-l\"ssl\"",
-					"-l\"stdc++\"",
-					"-l\"stdc++.6.0.9\"",
+					"-l\"c++\"",
 					"-l\"z\"",
 					"-l\"z.1.2.5\"",
 					"-framework",
@@ -6009,8 +6004,7 @@
 					"-l\"sqlite3\"",
 					"-l\"sqlite3.0\"",
 					"-l\"ssl\"",
-					"-l\"stdc++\"",
-					"-l\"stdc++.6.0.9\"",
+					"-l\"c++\"",
 					"-l\"z\"",
 					"-l\"z.1.2.5\"",
 					"-framework",

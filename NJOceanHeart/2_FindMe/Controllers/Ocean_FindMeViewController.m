@@ -75,7 +75,10 @@ static NSString *listCellId = @"Ocean_FindMeListCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CGFloat XHY =  screen_Height==812 ?88:64;
+    //20260503 modify
+    //CGFloat XHY =  screen_Height==812 ?88:64;
+    //NSLog(@"屏幕高度==%f",screen_Height);
+    CGFloat XHY =  screen_Height<812 ?88:64;
     
     //20210221 add
     XRCF_Common_Way * commonway=[[XRCF_Common_Way alloc]init];

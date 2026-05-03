@@ -56,4 +56,21 @@ post_install do |installer|
       end
     end
   end
+
+
+  # 修复：移除所有 -lstdc++ 链接标志
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # 处理 OTHER_LDFLAGS
+      if config.build_settings['OTHER_LDFLAGS']
+        # 过滤掉所有包含 stdc++ 的标志
+        config.build_settings['OTHER_LDFLAGS'] = config.build_settings['OTHER_LDFLAGS'].reject { |flag| flag.include?('stdc++') }
+      end
+      
+      # 强制 C++ 标准库为 libc++
+      config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+    end
+  end
+  
+  # 如果你之前有修复 AFNetworking 的脚本，请保留在上方或下方
 end

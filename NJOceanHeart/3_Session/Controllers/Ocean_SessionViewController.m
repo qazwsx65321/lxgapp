@@ -57,7 +57,9 @@
     self.chatController = chatController;
     self.contactController = contactController;
     
-    CGFloat BHY =  screen_Height==812 ?88:64;
+    //20260503 modify
+    //CGFloat BHY =  screen_Height==812 ?88:64;
+    CGFloat BHY =  screen_Height<812 ?88:64;
     
     //20210221 add
     XRCF_Common_Way * commonway=[[XRCF_Common_Way alloc]init];
