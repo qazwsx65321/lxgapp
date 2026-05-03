@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '12.0'  # 👈 建议取消注释，明确指定平台
 
 target 'NJOceanHeart' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -57,20 +57,24 @@ post_install do |installer|
     end
   end
 
-
-  # 修复：移除所有 -lstdc++ 链接标志
+  # 修复：移除所有 -lstdc++ 链接标志（已修复数组/字符串兼容问题）
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # 处理 OTHER_LDFLAGS
-      if config.build_settings['OTHER_LDFLAGS']
+      # 处理 OTHER_LDFLAGS，兼容字符串和数组两种情况
+      ldflags = config.build_settings['OTHER_LDFLAGS']
+      if ldflags
+        # 如果是字符串，先转换为数组
+        flags_array = ldflags.is_a?(String) ? ldflags.split : ldflags.dup
+        
         # 过滤掉所有包含 stdc++ 的标志
-        config.build_settings['OTHER_LDFLAGS'] = config.build_settings['OTHER_LDFLAGS'].reject { |flag| flag.include?('stdc++') }
+        filtered_flags = flags_array.reject { |flag| flag.to_s.include?('stdc++') }
+        
+        # 将结果存回去（保持原有类型，但通常 CocoaPods 期望数组）
+        config.build_settings['OTHER_LDFLAGS'] = filtered_flags
       end
       
       # 强制 C++ 标准库为 libc++
       config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
     end
   end
-  
-  # 如果你之前有修复 AFNetworking 的脚本，请保留在上方或下方
 end
