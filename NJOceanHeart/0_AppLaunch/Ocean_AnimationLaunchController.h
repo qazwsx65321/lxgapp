@@ -6,7 +6,9 @@
 //  Copyright © 2017年 Xuanr. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//20260504 modify
+//#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 @class AppDelegate;
 @interface Ocean_AnimationLaunchController : UIViewController
 

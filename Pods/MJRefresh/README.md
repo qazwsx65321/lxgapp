@@ -32,11 +32,11 @@
     * [The pull to refresh 09-DIY the control of refresh(Automatic refresh)](#The pull to refresh 09-DIY the control of refresh(Automatic refresh))
     * [The pull to refresh 10-DIY the control of refresh(Automatic back)](#The pull to refresh 10-DIY the control of refresh(Automatic back))
     * [UICollectionView01-The pull and drop-down refresh](#UICollectionView01-The pull and drop-down refresh)
-    * [UIWebView01-The drop-down refresh](#UIWebView01-The drop-down refresh)
+    * [WKWebView01-The drop-down refresh](#WKWebView01-The drop-down refresh)
 * [Hope](#Hope)
 
 ## <a id="Support what kinds of controls to refresh"></a>Support what kinds of controls to refresh
-* `UIScrollView`、`UITableView`、`UICollectionView`、`UIWebView`
+* `UIScrollView`、`UITableView`、`UICollectionView`、`WKWebView`
 
 ## <a id="How to use MJRefresh"></a>How to use MJRefresh
 * Installation with CocoaPods：`pod 'MJRefresh'`
@@ -332,7 +332,7 @@ self.collectionView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingB
 ```
 ![(UICollectionView01-上下拉刷新)](http://images0.cnblogs.com/blog2015/497279/201506/141206021603758.gif)
 
-## <a id="UIWebView01-The drop-down refresh"></a>UIWebView01-The drop-down refresh
+## <a id="WKWebView01-The drop-down refresh"></a>WKWebView01-The drop-down refresh
 ```objc
 //Add the control of The drop-down refresh
 self.webView.scrollView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{

@@ -115,8 +115,10 @@
 	<string>该程序想要访问您的照相机,更加快捷方便的添加好友</string>
 	<key>NSContactsUsageDescription</key>
 	<string>该程序想要访问您的通讯录,方便您在应用内查询联系人信息</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>需要获取您的位置信息，提供附近门店、定位服务等功能</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>是否允许10号葫芦娃使用您的位置信息?方便检索您周边的商铺</string>
+	<string>需要获取您的位置信息，提供附近门店、定位服务等功能</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>App需要您的同意,才能访问麦克风,便于您发送语音信息</string>
 	<key>NSPhotoLibraryUsageDescription</key>

@@ -6,14 +6,16 @@
 //  Copyright © 2016年 江萧. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//20260504 modify
+//#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import "MJRefresh.h"
 @protocol ImageWebDelegete <NSObject>
 
 -(void)dragWebview;
 
 @end
-@interface ImageWebview : UIView<UIWebViewDelegate>
+@interface ImageWebview : UIView<WKNavigationDelegate>
 {
     int selectindex;
     NSArray *webarr;

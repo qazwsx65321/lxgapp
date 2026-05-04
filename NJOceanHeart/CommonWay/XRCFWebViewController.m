@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 
 #define XRBackgroundColors  [UIColor colorWithHexString:@"4c4c4e" alpha:1]
-
+//20260504 moidfy
 @interface XRCFWebViewController ()<WKUIDelegate,WKNavigationDelegate>
 
 @property (nonatomic,strong)WKWebView * webView;

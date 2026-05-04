@@ -15,7 +15,7 @@
 @property (strong, nonatomic)UILabel *nameLabel;
 @property (strong, nonatomic)UILabel *contentLabel;
 @property (strong, nonatomic)UILabel *phoneLabel;
-@property (nonatomic,weak) UIWebView * webView;
+@property (nonatomic,weak) WKWebView * webView;
 @end
 
 @implementation Ocean_AboutOurController
@@ -32,7 +32,7 @@
     iamgeV.height -=64;
     iamgeV.image = [UIImage imageNamed:@"shareBackImage"];
     [self.view addSubview:iamgeV];
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
     webView.y = 64 ;
     webView.backgroundColor = [UIColor clearColor];
     self.webView = webView;

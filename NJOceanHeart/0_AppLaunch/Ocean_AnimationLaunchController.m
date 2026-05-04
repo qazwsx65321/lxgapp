@@ -12,7 +12,8 @@
 #import "OLImageView.h"
 #import "OLImage.h"
 #import "AppDelegate.h"
-@interface Ocean_AnimationLaunchController ()<UIWebViewDelegate,OLImageViewDelegate>
+//20260504 modify
+@interface Ocean_AnimationLaunchController ()<WKNavigationDelegate,OLImageViewDelegate>
 {
     BOOL firstBL;
 }

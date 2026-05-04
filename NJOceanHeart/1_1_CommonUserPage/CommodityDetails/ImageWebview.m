@@ -33,14 +33,17 @@
             [btn setTitleColor:[UIColor colorWithRed:255/255.0 green:195/255.0 blue:73/255.0 alpha:1] forState:UIControlStateSelected];
             [self addSubview:btn];
             
-            
-          UIWebView  *webview = [[UIWebView alloc] initWithFrame:CGRectMake(self.frame.size.width*i, 0, self.frame.size.width, scro.frame.size.height)];
+          //20260504 modify
+          WKWebView  *webview = [[WKWebView alloc] initWithFrame:CGRectMake(self.frame.size.width*i, 0, self.frame.size.width, scro.frame.size.height)];
            
             [scro addSubview:webview];
             webarr = webArr;
-            webview.delegate = self;
-            webview.scalesPageToFit = YES;
-            webview.dataDetectorTypes = UIDataDetectorTypeAll;
+            
+            //20260504 remark
+//            webview.delegate = self;
+//            webview.scalesPageToFit = YES;
+//            webview.dataDetectorTypes = UIDataDetectorTypeAll;
+            
             NSURL *urlstr = [NSURL URLWithString:[webArr objectAtIndex:i]];
             //创建NSURLRequest 即网络请求
             NSURLRequest *request = [[NSURLRequest alloc]initWithURL: urlstr];
@@ -96,11 +99,11 @@
 }
 #pragma mark-web
 //网页代理
-- (void)webViewDidFinishLoad:(UIWebView *)webView
+- (void)webViewDidFinishLoad:(WKWebView *)webView
 {
     
 }
--(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+-(void)webView:(WKWebView *)webView didFailLoadWithError:(NSError *)error
 {
     
 }

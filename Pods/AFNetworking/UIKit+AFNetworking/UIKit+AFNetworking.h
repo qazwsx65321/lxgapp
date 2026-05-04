@@ -31,7 +31,8 @@
     #import "AFImageDownloader.h"
     #import "AFNetworkActivityIndicatorManager.h"
     #import "UIRefreshControl+AFNetworking.h"
-    #import "UIWebView+AFNetworking.h"
+//    20260504 modify
+    #import "WKWebView+AFNetworking.h"
 #endif
 
     #import "UIActivityIndicatorView+AFNetworking.h"

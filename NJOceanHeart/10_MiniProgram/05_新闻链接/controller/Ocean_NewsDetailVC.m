@@ -8,7 +8,7 @@
 
 #import "Ocean_NewsDetailVC.h"
 
-@interface Ocean_NewsDetailVC ()<UIWebViewDelegate>
+@interface Ocean_NewsDetailVC ()<WKNavigationDelegate>
 
 @end
 
@@ -23,15 +23,16 @@
     
     [MBProgressHUD showActivityMessageInWindow:@"加载中..."];
     
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, screen_Width, screen_Height)];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, screen_Width, screen_Height)];
     webView.backgroundColor = [UIColor lightlightGrayColor];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
-    webView.delegate = self;
+    //20260504,WKWebView remark
+//    webView.delegate = self;
     [self.view addSubview:webView];
     
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
+- (void)webViewDidFinishLoad:(WKWebView *)webView {
     
     [MBProgressHUD hideHUD];
     

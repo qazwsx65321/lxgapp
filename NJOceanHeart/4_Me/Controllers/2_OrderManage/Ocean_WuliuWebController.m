@@ -23,7 +23,7 @@
     
     NSString *comurl =[self.urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, screen_Width, screen_Height)];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, screen_Width, screen_Height)];
     webView.backgroundColor = [UIColor whiteColor];
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:comurl]]];
     [self.view addSubview:webView];

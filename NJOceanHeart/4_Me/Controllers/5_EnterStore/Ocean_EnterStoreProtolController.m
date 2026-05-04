@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 
 @interface Ocean_EnterStoreProtolController ()
-@property (nonatomic,weak) UIWebView * webView;
+@property (nonatomic,weak) WKWebView * webView;
 @end
 
 @implementation Ocean_EnterStoreProtolController
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
     self.webView = webView;
     [self.view addSubview:webView];
 

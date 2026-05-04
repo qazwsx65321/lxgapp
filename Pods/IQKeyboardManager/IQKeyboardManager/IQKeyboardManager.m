@@ -572,7 +572,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 /* Adjusting RootViewController's frame according to interface orientation. */
 -(void)adjustFrame
 {
-    //  We are unable to get textField object while keyboard showing on UIWebView's textField.  (Bug ID: #11)
+    //  We are unable to get textField object while keyboard showing on WKWebView's textField.  (Bug ID: #11)
     if (_textFieldView == nil)   return;
     
     CFTimeInterval startTime = CACurrentMediaTime();
@@ -1162,8 +1162,8 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     CFTimeInterval startTime = CACurrentMediaTime();
     [self showLog:[NSString stringWithFormat:@"****** %@ started ******",NSStringFromSelector(_cmd)]];
 
-    //Commented due to #56. Added all the conditions below to handle UIWebView's textFields.    (Bug ID: #56)
-    //  We are unable to get textField object while keyboard showing on UIWebView's textField.  (Bug ID: #11)
+    //Commented due to #56. Added all the conditions below to handle WKWebView's textFields.    (Bug ID: #56)
+    //  We are unable to get textField object while keyboard showing on WKWebView's textField.  (Bug ID: #11)
 //    if (_textFieldView == nil)   return;
 
     //Restoring the contentOffset of the lastScrollView

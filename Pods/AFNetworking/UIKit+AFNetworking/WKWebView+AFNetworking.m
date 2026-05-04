@@ -1,4 +1,4 @@
-// UIWebView+AFNetworking.m
+// WKWebView+AFNetworking.m
 // Copyright (c) 2011–2016 Alamofire Software Foundation ( http://alamofire.org/ )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,7 +19,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "UIWebView+AFNetworking.h"
+#import "WKWebView+AFNetworking.h"
 
 #import <objc/runtime.h>
 
@@ -29,11 +29,11 @@
 #import "AFURLResponseSerialization.h"
 #import "AFURLRequestSerialization.h"
 
-@interface UIWebView (_AFNetworking)
+@interface WKWebView (_AFNetworking)
 @property (readwrite, nonatomic, strong, setter = af_setURLSessionTask:) NSURLSessionDataTask *af_URLSessionTask;
 @end
 
-@implementation UIWebView (_AFNetworking)
+@implementation WKWebView (_AFNetworking)
 
 - (NSURLSessionDataTask *)af_URLSessionTask {
     return (NSURLSessionDataTask *)objc_getAssociatedObject(self, @selector(af_URLSessionTask));
@@ -47,7 +47,7 @@
 
 #pragma mark -
 
-@implementation UIWebView (AFNetworking)
+@implementation WKWebView (AFNetworking)
 
 - (AFHTTPSessionManager  *)sessionManager {
     static AFHTTPSessionManager *_af_defaultHTTPSessionManager = nil;
@@ -117,44 +117,45 @@
             success:(NSData * (^)(NSHTTPURLResponse *response, NSData *data))success
             failure:(void (^)(NSError *error))failure
 {
-    NSParameterAssert(request);
-
-    if (self.af_URLSessionTask.state == NSURLSessionTaskStateRunning || self.af_URLSessionTask.state == NSURLSessionTaskStateSuspended) {
-        [self.af_URLSessionTask cancel];
-    }
-    self.af_URLSessionTask = nil;
-
-    __weak __typeof(self)weakSelf = self;
-    NSURLSessionDataTask *dataTask;
-    dataTask = [self.sessionManager
-            GET:request.URL.absoluteString
-            parameters:nil
-            progress:nil
-            success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
-                __strong __typeof(weakSelf) strongSelf = weakSelf;
-                if (success) {
-                    success((NSHTTPURLResponse *)task.response, responseObject);
-                }
-                [strongSelf loadData:responseObject MIMEType:MIMEType textEncodingName:textEncodingName baseURL:[task.currentRequest URL]];
-
-                if ([strongSelf.delegate respondsToSelector:@selector(webViewDidStartLoad:)]) {
-                    [strongSelf.delegate webViewDidFinishLoad:strongSelf];
-                }
-            }
-            failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
-                if (failure) {
-                    failure(error);
-                }
-            }];
-    self.af_URLSessionTask = dataTask;
-    if (progress != nil) {
-        *progress = [self.sessionManager downloadProgressForTask:dataTask];
-    }
-    [self.af_URLSessionTask resume];
-
-    if ([self.delegate respondsToSelector:@selector(webViewDidStartLoad:)]) {
-        [self.delegate webViewDidStartLoad:self];
-    }
+    //20260504 注释所有的本方法代码
+//    NSParameterAssert(request);
+//
+//    if (self.af_URLSessionTask.state == NSURLSessionTaskStateRunning || self.af_URLSessionTask.state == NSURLSessionTaskStateSuspended) {
+//        [self.af_URLSessionTask cancel];
+//    }
+//    self.af_URLSessionTask = nil;
+//
+//    __weak __typeof(self)weakSelf = self;
+//    NSURLSessionDataTask *dataTask;
+//    dataTask = [self.sessionManager
+//            GET:request.URL.absoluteString
+//            parameters:nil
+//            progress:nil
+//            success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+//                __strong __typeof(weakSelf) strongSelf = weakSelf;
+//                if (success) {
+//                    success((NSHTTPURLResponse *)task.response, responseObject);
+//                }
+//                [strongSelf loadData:responseObject MIMEType:MIMEType textEncodingName:textEncodingName baseURL:[task.currentRequest URL]];
+//
+//                if ([strongSelf.delegate respondsToSelector:@selector(webViewDidStartLoad:)]) {
+//                    [strongSelf.delegate webViewDidFinishLoad:strongSelf];
+//                }
+//            }
+//            failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+//                if (failure) {
+//                    failure(error);
+//                }
+//            }];
+//    self.af_URLSessionTask = dataTask;
+//    if (progress != nil) {
+//        *progress = [self.sessionManager downloadProgressForTask:dataTask];
+//    }
+//    [self.af_URLSessionTask resume];
+//
+//    if ([self.delegate respondsToSelector:@selector(webViewDidStartLoad:)]) {
+//        [self.delegate webViewDidStartLoad:self];
+//    }
 }
 
 @end

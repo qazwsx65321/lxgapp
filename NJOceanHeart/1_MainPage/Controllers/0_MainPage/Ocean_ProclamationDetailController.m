@@ -24,7 +24,9 @@
 
 
 @interface Ocean_ProclamationDetailController ()
-@property (nonatomic,weak) UIWebView * webView;
+//20260504 modify
+@property (nonatomic,weak) WKWebView * webView;
+
 @property (nonatomic,strong) ProclamationDetailModel * model;
 @end
 
@@ -35,7 +37,9 @@
     self.title = @"公告详情";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    //20260504 modify
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
+    
     self.webView = webView;
     [self.view addSubview:webView];
     [self NOTICEDETAIL];
