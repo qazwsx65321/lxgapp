@@ -5822,6 +5822,8 @@
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMLib_SDK_v2_8_15_Dev_a3bcb/IMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/IMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/BaiduMap_IOSSDK_v3.3.1_Lib/thirdlibs",
+					"$(SRCROOT)/ios_libs/iPhoneOS",
+					"$(SRCROOT)/ios_libs/iPhoneSimulator",
 				);
 				MARKETING_VERSION = 6.1;
 				OTHER_LDFLAGS = (
@@ -5910,6 +5912,7 @@
 					"-weak_framework",
 					"\"UserNotifications\"",
 					"-ld64",
+					"-lstdc++.6.0.9",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuanrui.eshopb2b2c;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -5984,6 +5987,8 @@
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMLib_SDK_v2_8_15_Dev_a3bcb/IMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/IMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/BaiduMap_IOSSDK_v3.3.1_Lib/thirdlibs",
+					"$(SRCROOT)/ios_libs/iPhoneOS",
+					"$(SRCROOT)/ios_libs/iPhoneSimulator",
 				);
 				MARKETING_VERSION = 6.1;
 				OTHER_LDFLAGS = (
@@ -6072,6 +6077,7 @@
 					"-weak_framework",
 					"\"UserNotifications\"",
 					"-ld64",
+					"-lstdc++.6.0.9",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xuanrui.eshopb2b2c;
 				PRODUCT_NAME = "$(TARGET_NAME)";
