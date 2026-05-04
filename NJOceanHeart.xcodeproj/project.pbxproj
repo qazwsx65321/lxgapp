@@ -4921,6 +4921,7 @@
 				284EC8FE1EF779280042E95A /* Resources */,
 				74BB6087FA26B3311820A713 /* [CP] Copy Pods Resources */,
 				B81516647592270581F7589C /* [CP] Embed Pods Frameworks */,
+				81F3D8652FA8515E009DD803 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -5109,6 +5110,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NJOceanHeart/Pods-NJOceanHeart-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		81F3D8652FA8515E009DD803 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 自动剥离 Framework 中的 Bitcode\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n# 执行剥离 Bitcode 命令\nxcrun bitcode_strip -r \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
 		};
 		B81516647592270581F7589C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

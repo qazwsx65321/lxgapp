@@ -77,4 +77,14 @@ post_install do |installer|
       config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
     end
   end
+
+  
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # 关闭所有 Bitcode
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+    end
+  end
+
+
 end
