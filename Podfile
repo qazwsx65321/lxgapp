@@ -99,6 +99,48 @@ post_install do |installer|
       config.build_settings['ENABLE_BITCODE'] = 'NO'
     end
   end
+  
+  
+  
+  
+  
+  # 1. 找到 bitcode_strip 工具的位置
+    bitcode_strip_path = `xcrun --find bitcode_strip`.chop!
+
+    # 2. 定义一个移除 bitcode 的方法
+    def strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+      framework_path = File.join(Dir.pwd, framework_relative_path)
+      # 只有当文件存在时才执行移除命令
+      if File.exist?(framework_path)
+        command = "#{bitcode_strip_path} #{framework_path} -r -o #{framework_path}"
+        puts "Stripping bitcode: #{command}"
+        system(command)
+      else
+        puts "Framework not found at: #{framework_path}"
+      end
+    end
+
+    # 3. 列出所有需要处理的融云库 (根据你报错中的列表)
+    rongcloud_frameworks = [
+      "RongChatRoom",
+      "RongCustomerService",
+      "RongDiscussion",
+      "RongIMKit",
+      "RongIMLib",
+      "RongIMLibCore",
+      "RongLocation",
+      "RongPublicService"
+    ]
+
+    # 4. 遍历列表，对每个库执行移除操作
+    rongcloud_frameworks.each do |framework_name|
+      # 注意：这里的路径需要根据你项目中融云 SDK 的实际位置进行调整
+      framework_relative_path = "Pods/RongCloudIM/RongCloudIM/#{framework_name}.xcframework/ios-arm64_armv7/#{framework_name}.framework/#{framework_name}"
+      strip_bitcode_from_framework(bitcode_strip_path, framework_relative_path)
+    end
+
+
+
 
 
 end
