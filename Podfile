@@ -90,11 +90,12 @@ post_install do |installer|
       config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
     end
   end
-
   
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      # 关闭所有 Bitcode
+      # 修复 MinimumOSVersion 错误
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+      # 关闭所有库的 Bitcode
       config.build_settings['ENABLE_BITCODE'] = 'NO'
     end
   end

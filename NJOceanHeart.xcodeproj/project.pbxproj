@@ -572,7 +572,6 @@
 		79E716611F346A1F009DE504 /* Ocean_PayGoodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E716601F346A1F009DE504 /* Ocean_PayGoodsController.m */; };
 		8158E77F2FA992D3007296D6 /* JYangToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E491FD6427A006AA38C /* JYangToolKit.framework */; };
 		8158E7802FA992D4007296D6 /* JYangToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E491FD6427A006AA38C /* JYangToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		824D3DD20A4B81A394C87B6F /* libPods-NJOceanHeart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF59975C8E748B4844D2B49A /* libPods-NJOceanHeart.a */; };
 		90A944441F3839D70094E3F1 /* Ocean_RecommandHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A944431F3839D70094E3F1 /* Ocean_RecommandHeadCell.m */; };
 		90A944471F3839EA0094E3F1 /* Ocean_RecommandBodyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A944461F3839EA0094E3F1 /* Ocean_RecommandBodyCell.m */; };
 		90A9444A1F38447F0094E3F1 /* Ocean_RecommandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A944491F38447F0094E3F1 /* Ocean_RecommandModel.m */; };
@@ -588,6 +587,7 @@
 		90FAE2CB1F0A1A460004DE74 /* Ocean_PswSetAndModifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE2CA1F0A1A460004DE74 /* Ocean_PswSetAndModifyViewController.m */; };
 		90FAE2CE1F0A25950004DE74 /* Ocean_PswSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE2CD1F0A25950004DE74 /* Ocean_PswSetViewController.m */; };
 		90FAE2D21F0A343D0004DE74 /* TPPasswordTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE2D11F0A343D0004DE74 /* TPPasswordTextView.m */; };
+		B14D13700C3DBDD656E11D9F /* libPods-NJOceanHeart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 788AD4D42D2AD4ED60C02940 /* libPods-NJOceanHeart.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1456,6 +1456,8 @@
 		4C9E4396280D6C3C00503B1A /* XRCFWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRCFWebViewController.h; sourceTree = "<group>"; };
 		4CF0DD5425E1E760004F5D87 /* HessianRequestIos14.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HessianRequestIos14.m; sourceTree = "<group>"; };
 		4CF0DD5525E1E761004F5D87 /* HessianRequestIos14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HessianRequestIos14.h; sourceTree = "<group>"; };
+		678511F7FFD631374AE98BDA /* Pods-NJOceanHeart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJOceanHeart.debug.xcconfig"; path = "Target Support Files/Pods-NJOceanHeart/Pods-NJOceanHeart.debug.xcconfig"; sourceTree = "<group>"; };
+		788AD4D42D2AD4ED60C02940 /* libPods-NJOceanHeart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NJOceanHeart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		790768571F46EC5600844A53 /* Ocean_XDConnectRongCloud+Ocean_GetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ocean_XDConnectRongCloud+Ocean_GetInfo.h"; sourceTree = "<group>"; };
 		790768581F46EC5600844A53 /* Ocean_XDConnectRongCloud+Ocean_GetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ocean_XDConnectRongCloud+Ocean_GetInfo.m"; sourceTree = "<group>"; };
 		79110E321F4E879900050BBF /* Ocean_WuliuWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ocean_WuliuWebController.h; sourceTree = "<group>"; };
@@ -1750,8 +1752,6 @@
 		79E7165C1F341C45009DE504 /* Ocean_AddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ocean_AddressModel.m; sourceTree = "<group>"; };
 		79E7165F1F346A1F009DE504 /* Ocean_PayGoodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ocean_PayGoodsController.h; sourceTree = "<group>"; };
 		79E716601F346A1F009DE504 /* Ocean_PayGoodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ocean_PayGoodsController.m; sourceTree = "<group>"; };
-		8A97C55DC371BE6D548B6FF1 /* Pods-NJOceanHeart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJOceanHeart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NJOceanHeart/Pods-NJOceanHeart.debug.xcconfig"; sourceTree = "<group>"; };
-		8F7B34EFEDBA23F2CED4E83B /* Pods-NJOceanHeart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJOceanHeart.release.xcconfig"; path = "Pods/Target Support Files/Pods-NJOceanHeart/Pods-NJOceanHeart.release.xcconfig"; sourceTree = "<group>"; };
 		90A944421F3839D70094E3F1 /* Ocean_RecommandHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ocean_RecommandHeadCell.h; sourceTree = "<group>"; };
 		90A944431F3839D70094E3F1 /* Ocean_RecommandHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ocean_RecommandHeadCell.m; sourceTree = "<group>"; };
 		90A944451F3839EA0094E3F1 /* Ocean_RecommandBodyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ocean_RecommandBodyCell.h; sourceTree = "<group>"; };
@@ -1782,7 +1782,7 @@
 		90FAE2CD1F0A25950004DE74 /* Ocean_PswSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ocean_PswSetViewController.m; sourceTree = "<group>"; };
 		90FAE2D01F0A343D0004DE74 /* TPPasswordTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPasswordTextView.h; sourceTree = "<group>"; };
 		90FAE2D11F0A343D0004DE74 /* TPPasswordTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPasswordTextView.m; sourceTree = "<group>"; };
-		FF59975C8E748B4844D2B49A /* libPods-NJOceanHeart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NJOceanHeart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3ED0289D0062C61FC72722 /* Pods-NJOceanHeart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NJOceanHeart.release.xcconfig"; path = "Target Support Files/Pods-NJOceanHeart/Pods-NJOceanHeart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1824,13 +1824,22 @@
 				79CCA6C21F2896BC0000BE11 /* AVFoundation.framework in Frameworks */,
 				79CCA6C01F2896B50000BE11 /* AudioToolbox.framework in Frameworks */,
 				79CCA6BE1F2896AE0000BE11 /* AssetsLibrary.framework in Frameworks */,
-				824D3DD20A4B81A394C87B6F /* libPods-NJOceanHeart.a in Frameworks */,
+				B14D13700C3DBDD656E11D9F /* libPods-NJOceanHeart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F6D9AC92BEB96E10D99A12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				678511F7FFD631374AE98BDA /* Pods-NJOceanHeart.debug.xcconfig */,
+				CC3ED0289D0062C61FC72722 /* Pods-NJOceanHeart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2808DD321F09DB8000815F7D /* 0_MainPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2508,8 +2517,8 @@
 			children = (
 				284EC9021EF779280042E95A /* NJOceanHeart */,
 				284EC9011EF779280042E95A /* Products */,
-				76A9DE16E19A8A9F7391DA48 /* Pods */,
 				C50714C444DB763AF4EC35B2 /* Frameworks */,
+				20F6D9AC92BEB96E10D99A12 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4036,15 +4045,6 @@
 			path = CommonWay;
 			sourceTree = "<group>";
 		};
-		76A9DE16E19A8A9F7391DA48 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8A97C55DC371BE6D548B6FF1 /* Pods-NJOceanHeart.debug.xcconfig */,
-				8F7B34EFEDBA23F2CED4E83B /* Pods-NJOceanHeart.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		791206D61F695DD000AFDA3E /* CustomLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -4906,7 +4906,7 @@
 				79CCA6C11F2896BC0000BE11 /* AVFoundation.framework */,
 				79CCA6BF1F2896B50000BE11 /* AudioToolbox.framework */,
 				79CCA6BD1F2896AE0000BE11 /* AssetsLibrary.framework */,
-				FF59975C8E748B4844D2B49A /* libPods-NJOceanHeart.a */,
+				788AD4D42D2AD4ED60C02940 /* libPods-NJOceanHeart.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4918,13 +4918,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 284EC9171EF779280042E95A /* Build configuration list for PBXNativeTarget "NJOceanHeart" */;
 			buildPhases = (
-				043EBAB1FF6DFD084A3FDCCB /* [CP] Check Pods Manifest.lock */,
+				1EBD0B61129704AC5AE19E75 /* [CP] Check Pods Manifest.lock */,
 				284EC8FC1EF779280042E95A /* Sources */,
 				284EC8FD1EF779280042E95A /* Frameworks */,
 				284EC8FE1EF779280042E95A /* Resources */,
-				74BB6087FA26B3311820A713 /* [CP] Copy Pods Resources */,
-				B81516647592270581F7589C /* [CP] Embed Pods Frameworks */,
 				8158E7812FA992D4007296D6 /* Embed Frameworks */,
+				D16D93E37875D1EC761F3777 /* [CP] Embed Pods Frameworks */,
+				35CE8B9B9EB306C51E575BEF /* [CP] Copy Pods Resources */,
 				8158E7822FA9A2CC007296D6 /* ShellScript */,
 			);
 			buildRules = (
@@ -5049,16 +5049,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		043EBAB1FF6DFD084A3FDCCB /* [CP] Check Pods Manifest.lock */ = {
+		1EBD0B61129704AC5AE19E75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NJOceanHeart-checkManifestLockResult.txt",
 			);
@@ -5067,7 +5071,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		74BB6087FA26B3311820A713 /* [CP] Copy Pods Resources */ = {
+		35CE8B9B9EB306C51E575BEF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5134,9 +5138,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 【安全版】剥离 Bitcode，不破坏签名\nexecutable_path=\"$1\"\nif [[ -z \"$executable_path\" ]]; then\n    exit 0\nfi\n\nif [[ -f \"$executable_path\" ]]; then\n    echo \"Stripping Bitcode from: $executable_path\"\n    xcrun bitcode_strip -r \"$executable_path\" -o \"$executable_path\"\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 安全剥离 Framework Bitcode（不破坏签名，真机+TestFlight都可用）\nfind \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}/Frameworks\" -type f | while read -r file; do\n  if file \"$file\" | grep -q \"Mach-O\"; then\n    xcrun bitcode_strip -r \"$file\" -o \"$file\"\n  fi\ndone\n";
 		};
-		B81516647592270581F7589C /* [CP] Embed Pods Frameworks */ = {
+		D16D93E37875D1EC761F3777 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5784,7 +5788,7 @@
 		};
 		284EC9181EF779280042E95A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A97C55DC371BE6D548B6FF1 /* Pods-NJOceanHeart.debug.xcconfig */;
+			baseConfigurationReference = 678511F7FFD631374AE98BDA /* Pods-NJOceanHeart.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -5942,7 +5946,7 @@
 		};
 		284EC9191EF779280042E95A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F7B34EFEDBA23F2CED4E83B /* Pods-NJOceanHeart.release.xcconfig */;
+			baseConfigurationReference = CC3ED0289D0062C61FC72722 /* Pods-NJOceanHeart.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
