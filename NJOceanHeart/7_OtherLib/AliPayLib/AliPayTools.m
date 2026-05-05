@@ -11,7 +11,8 @@
 #define appScheme @"XRoceanHeart"//应用注册scheme
 
 #import "AliPayTools.h"
-#import <AlipaySDK/AlipaySDK.h>
+//20260504 remark
+//#import <AlipaySDK/AlipaySDK.h>
 #import "Order.h"
 #import "DataSigner.h"
 
@@ -88,10 +89,11 @@ PayCallBack payBackBlock;
 + (void)callBackActionWithURL:(NSURL *)url
 {
     // 这里是调用支付宝客户端的回调，url就是在appdelelgate里面传过来的
-    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
-        NSLog(@"reslut2 = %@",resultDic);
-        [self payFinishedWithErrorCode:[resultDic[@"resultStatus"] intValue]];
-    }];
+    //20260504 remark
+//    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+//        NSLog(@"reslut2 = %@",resultDic);
+//        [self payFinishedWithErrorCode:[resultDic[@"resultStatus"] intValue]];
+//    }];
 }
 
 + (void)payFinishedWithErrorCode:(int)code
@@ -167,12 +169,13 @@ PayCallBack payBackBlock;
                         
                         //支付结果回调Block，用于wap支付结果回调（非跳转钱包支付）
                         
-                        [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
-                            NSLog(@"reslut = %@",resultDic);
-                            
-                            NSLog(@"reslut1 = %@",resultDic);
-                            [self payFinishedWithErrorCode:[resultDic[@"resultStatus"] intValue]];
-                        }];
+                        //20260504 remark
+//                        [[AlipaySDK defaultService] payOrder:orderString fromScheme:appScheme callback:^(NSDictionary *resultDic) {
+//                            NSLog(@"reslut = %@",resultDic);
+//                            
+//                            NSLog(@"reslut1 = %@",resultDic);
+//                            [self payFinishedWithErrorCode:[resultDic[@"resultStatus"] intValue]];
+//                        }];
                     }
 
                     

@@ -7,8 +7,8 @@
 //
 
 #import "Ocean_XDConnectRongCloud.h"
-#import <JrmfPacketKit/JrmfPacketManager.h>
-#import <JrmfWalletKit/JrmfWalletKit.h>
+//#import <JrmfPacketKit/JrmfPacketManager.h>
+//#import <JrmfWalletKit/JrmfWalletKit.h>
 #import "Ocean_XDConnectRongCloud+Ocean_GetInfo.h"
 
 #define ContactNotificationMessage_ContactOperationDeleteResponse @"OPERATION_DEL"
@@ -168,27 +168,27 @@ singleton_m(Ocean_XDConnectRongCloud)
  * 我的钱包
  */
 - (void)openRongCloudRedPacket {
-    
-    if ([[JrmfPacketManager getCurrentVersion] compare:@"2.8.5" options:NSNumericSearch] == NSOrderedDescending
-        || [@"2.8.5" isEqualToString:[JrmfPacketManager getCurrentVersion]]) {
-        //2.8.5 及更高版本
-        //初始化我的钱包界面信息
-        JrmfWalletSDK *wallet = [[JrmfWalletSDK alloc] init];
-        wallet.themeNavColor = [UIColor colorWithHexString:Navi_Background_Color];
-        wallet.themePageColor = [UIColor colorWithHexString:Navi_Background_Color];
-//        wallet.NavTitColor  =[UIColor whiteColor];
-//        [RCIM sharedRCIM].globalNavigationBarTintColor = [UIColor redColor];
-
-        
-        //打开我的钱包
-        [JrmfWalletSDK openWallet];
-        
-    }else {
-       
-        //低于 2.8.5 版本
-        //[JrmfPacketManager getEventOpenWallet];
-        
-    }
+//20260504 remark
+//    if ([[JrmfPacketManager getCurrentVersion] compare:@"2.8.5" options:NSNumericSearch] == NSOrderedDescending
+//        || [@"2.8.5" isEqualToString:[JrmfPacketManager getCurrentVersion]]) {
+//        //2.8.5 及更高版本
+//        //初始化我的钱包界面信息
+//        JrmfWalletSDK *wallet = [[JrmfWalletSDK alloc] init];
+//        wallet.themeNavColor = [UIColor colorWithHexString:Navi_Background_Color];
+//        wallet.themePageColor = [UIColor colorWithHexString:Navi_Background_Color];
+////        wallet.NavTitColor  =[UIColor whiteColor];
+////        [RCIM sharedRCIM].globalNavigationBarTintColor = [UIColor redColor];
+//
+//        
+//        //打开我的钱包
+//        [JrmfWalletSDK openWallet];
+//        
+//    }else {
+//       
+//        //低于 2.8.5 版本
+//        //[JrmfPacketManager getEventOpenWallet];
+//        
+//    }
     
 }
 

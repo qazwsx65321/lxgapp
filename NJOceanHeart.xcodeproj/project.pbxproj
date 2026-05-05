@@ -221,9 +221,6 @@
 		28717E4C1FD6427A006AA38C /* JrmfInfo.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28717E431FD6427A006AA38C /* JrmfInfo.strings */; };
 		28717E4D1FD6427A006AA38C /* WalletResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28717E461FD6427A006AA38C /* WalletResource.bundle */; };
 		28717E4E1FD6427A006AA38C /* jrmf.cer in Resources */ = {isa = PBXBuildFile; fileRef = 28717E471FD6427A006AA38C /* jrmf.cer */; };
-		28717E4F1FD6427A006AA38C /* JrmfPacketKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E481FD6427A006AA38C /* JrmfPacketKit.framework */; };
-		28717E501FD6427A006AA38C /* JYangToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E491FD6427A006AA38C /* JYangToolKit.framework */; };
-		28717E511FD6427A006AA38C /* JrmfWalletKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E4A1FD6427A006AA38C /* JrmfWalletKit.framework */; };
 		28717E521FD6427A006AA38C /* JResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28717E4B1FD6427A006AA38C /* JResource.bundle */; };
 		2873B8B41F1C9A1300469F4B /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2873B8B21F1C9A1300469F4B /* LoginController.m */; };
 		2873B8B71F1C9A2D00469F4B /* RegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2873B8B51F1C9A2D00469F4B /* RegisterController.m */; };
@@ -395,7 +392,6 @@
 		28CB08851FCE66DD0033C58D /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CB087C1FCE66DD0033C58D /* YYClassInfo.m */; };
 		28CE1E9B1F33303200DDD8C5 /* AliPayTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CE1E331F33303200DDD8C5 /* AliPayTools.m */; };
 		28CE1E9C1F33303200DDD8C5 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28CE1E351F33303200DDD8C5 /* AlipaySDK.bundle */; };
-		28CE1E9D1F33303200DDD8C5 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CE1E361F33303200DDD8C5 /* AlipaySDK.framework */; };
 		28CE1E9E1F33303200DDD8C5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CE1E371F33303200DDD8C5 /* libcrypto.a */; };
 		28CE1E9F1F33303200DDD8C5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CE1E381F33303200DDD8C5 /* libssl.a */; };
 		28CE1EA01F33303200DDD8C5 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CE1E861F33303200DDD8C5 /* Order.m */; };
@@ -574,6 +570,8 @@
 		79CCA6F31F28984B0000BE11 /* AppDelegate+Ocean_OtherPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CCA6F21F28984B0000BE11 /* AppDelegate+Ocean_OtherPlatform.m */; };
 		79E7165D1F341C45009DE504 /* Ocean_AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E7165C1F341C45009DE504 /* Ocean_AddressModel.m */; };
 		79E716611F346A1F009DE504 /* Ocean_PayGoodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E716601F346A1F009DE504 /* Ocean_PayGoodsController.m */; };
+		8158E77F2FA992D3007296D6 /* JYangToolKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E491FD6427A006AA38C /* JYangToolKit.framework */; };
+		8158E7802FA992D4007296D6 /* JYangToolKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28717E491FD6427A006AA38C /* JYangToolKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		824D3DD20A4B81A394C87B6F /* libPods-NJOceanHeart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF59975C8E748B4844D2B49A /* libPods-NJOceanHeart.a */; };
 		90A944441F3839D70094E3F1 /* Ocean_RecommandHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A944431F3839D70094E3F1 /* Ocean_RecommandHeadCell.m */; };
 		90A944471F3839EA0094E3F1 /* Ocean_RecommandBodyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A944461F3839EA0094E3F1 /* Ocean_RecommandBodyCell.m */; };
@@ -591,6 +589,20 @@
 		90FAE2CE1F0A25950004DE74 /* Ocean_PswSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE2CD1F0A25950004DE74 /* Ocean_PswSetViewController.m */; };
 		90FAE2D21F0A343D0004DE74 /* TPPasswordTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FAE2D11F0A343D0004DE74 /* TPPasswordTextView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8158E7812FA992D4007296D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8158E7802FA992D4007296D6 /* JYangToolKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2800CB011F4AFB17001E87C3 /* KX9RechargeOrderTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KX9RechargeOrderTool.h; sourceTree = "<group>"; };
@@ -994,9 +1006,7 @@
 		28717E451FD6427A006AA38C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/JrmfInfo.strings; sourceTree = "<group>"; };
 		28717E461FD6427A006AA38C /* WalletResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WalletResource.bundle; sourceTree = "<group>"; };
 		28717E471FD6427A006AA38C /* jrmf.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = jrmf.cer; sourceTree = "<group>"; };
-		28717E481FD6427A006AA38C /* JrmfPacketKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JrmfPacketKit.framework; sourceTree = "<group>"; };
 		28717E491FD6427A006AA38C /* JYangToolKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JYangToolKit.framework; sourceTree = "<group>"; };
-		28717E4A1FD6427A006AA38C /* JrmfWalletKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JrmfWalletKit.framework; sourceTree = "<group>"; };
 		28717E4B1FD6427A006AA38C /* JResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JResource.bundle; sourceTree = "<group>"; };
 		2873B8B21F1C9A1300469F4B /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		2873B8B31F1C9A1300469F4B /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
@@ -1332,7 +1342,6 @@
 		28CE1E321F33303200DDD8C5 /* AliPayTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayTools.h; sourceTree = "<group>"; };
 		28CE1E331F33303200DDD8C5 /* AliPayTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayTools.m; sourceTree = "<group>"; };
 		28CE1E351F33303200DDD8C5 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
-		28CE1E361F33303200DDD8C5 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		28CE1E371F33303200DDD8C5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 		28CE1E381F33303200DDD8C5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
 		28CE1E3A1F33303200DDD8C5 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
@@ -1786,12 +1795,10 @@
 				796298DF1F41BAF5006756B9 /* GLKit.framework in Frameworks */,
 				796298DD1F41BA86006756B9 /* libresolv.tbd in Frameworks */,
 				79CCA6F01F28976F0000BE11 /* VideoToolbox.framework in Frameworks */,
+				8158E77F2FA992D3007296D6 /* JYangToolKit.framework in Frameworks */,
 				79CCA6C81F2896D20000BE11 /* CoreGraphics.framework in Frameworks */,
-				28CE1E9D1F33303200DDD8C5 /* AlipaySDK.framework in Frameworks */,
 				28CE1E9F1F33303200DDD8C5 /* libssl.a in Frameworks */,
 				79CCA6CE1F2896E40000BE11 /* CoreTelephony.framework in Frameworks */,
-				28717E501FD6427A006AA38C /* JYangToolKit.framework in Frameworks */,
-				28717E511FD6427A006AA38C /* JrmfWalletKit.framework in Frameworks */,
 				79CCA6E61F2897440000BE11 /* SystemConfiguration.framework in Frameworks */,
 				79CCA6EE1F2897670000BE11 /* CoreMotion.framework in Frameworks */,
 				28A9F6541F3329A9007C66FF /* CoreText.framework in Frameworks */,
@@ -1805,7 +1812,6 @@
 				79CCA6E21F2897360000BE11 /* OpenGLES.framework in Frameworks */,
 				79CCA6E01F28972F0000BE11 /* MapKit.framework in Frameworks */,
 				79CCA6DC1F2897210000BE11 /* libxml2.tbd in Frameworks */,
-				28717E4F1FD6427A006AA38C /* JrmfPacketKit.framework in Frameworks */,
 				79CCA6D81F28970D0000BE11 /* libsqlite3.tbd in Frameworks */,
 				79CCA6D61F2897030000BE11 /* libc++abi.tbd in Frameworks */,
 				79CCA6D21F2896F20000BE11 /* ImageIO.framework in Frameworks */,
@@ -3119,9 +3125,7 @@
 				28717E431FD6427A006AA38C /* JrmfInfo.strings */,
 				28717E461FD6427A006AA38C /* WalletResource.bundle */,
 				28717E471FD6427A006AA38C /* jrmf.cer */,
-				28717E481FD6427A006AA38C /* JrmfPacketKit.framework */,
 				28717E491FD6427A006AA38C /* JYangToolKit.framework */,
-				28717E4A1FD6427A006AA38C /* JrmfWalletKit.framework */,
 				28717E4B1FD6427A006AA38C /* JResource.bundle */,
 			);
 			path = JrmfIMLib;
@@ -3905,7 +3909,6 @@
 			isa = PBXGroup;
 			children = (
 				28CE1E351F33303200DDD8C5 /* AlipaySDK.bundle */,
-				28CE1E361F33303200DDD8C5 /* AlipaySDK.framework */,
 				28CE1E371F33303200DDD8C5 /* libcrypto.a */,
 				28CE1E381F33303200DDD8C5 /* libssl.a */,
 				28CE1E391F33303200DDD8C5 /* openssl */,
@@ -4921,7 +4924,8 @@
 				284EC8FE1EF779280042E95A /* Resources */,
 				74BB6087FA26B3311820A713 /* [CP] Copy Pods Resources */,
 				B81516647592270581F7589C /* [CP] Embed Pods Frameworks */,
-				81F3D8742FA8D146009DD803 /* ShellScript */,
+				8158E7812FA992D4007296D6 /* Embed Frameworks */,
+				8158E7822FA9A2CC007296D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -5082,10 +5086,12 @@
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCColor.plist",
 				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
-				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/Required/ShareSDK.bundle",
-				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
-				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle",
-				"${PODS_ROOT}/ShareSDK3/SDK/ShareSDK/Support/Optional/ShareSDKUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK.bundle",
+				"${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/Optional/ShareSDKConfigFile.bundle",
+				"${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_SinaWeibo.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mob_sharesdk/ShareSDK_JS_WeChat.bundle",
+				"${PODS_ROOT}/mob_sharesdk/ShareSDK/Support/Optional/ShareSDKUI.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -5102,8 +5108,10 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCColor.plist",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDKConfigFile.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDK_JS_SinaWeibo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDK_JS_WeChat.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ShareSDKUI.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5111,7 +5119,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NJOceanHeart/Pods-NJOceanHeart-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81F3D8742FA8D146009DD803 /* ShellScript */ = {
+		8158E7822FA9A2CC007296D6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5126,7 +5134,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 自动剥离 Framework 中的 Bitcode\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\n# 执行剥离 Bitcode 命令\nxcrun bitcode_strip -r \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH\"\ndone\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 【安全版】剥离 Bitcode，不破坏签名\nexecutable_path=\"$1\"\nif [[ -z \"$executable_path\" ]]; then\n    exit 0\nfi\n\nif [[ -f \"$executable_path\" ]]; then\n    echo \"Stripping Bitcode from: $executable_path\"\n    xcrun bitcode_strip -r \"$executable_path\" -o \"$executable_path\"\nfi\n";
 		};
 		B81516647592270581F7589C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -5806,7 +5814,6 @@
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/IMKit",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/IMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/RedPacket/AlipaySDK",
-					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/RedPacket/JrmfIMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/BaiduMap_IOSSDK_v3.3.1_Lib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/JrmfIMLib",
 				);
@@ -5898,13 +5905,9 @@
 					"-framework",
 					"\"MOBFoundation\"",
 					"-framework",
-					"\"MOBFoundationEx\"",
-					"-framework",
 					"\"MobileCoreServices\"",
 					"-framework",
 					"\"OpenGLES\"",
-					"-framework",
-					"\"QQConnector\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-framework",
@@ -5921,8 +5924,6 @@
 					"\"SinaWeiboConnector\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-framework",
-					"\"TencentOpenAPI\"",
 					"-framework",
 					"\"UIKit\"",
 					"-framework",
@@ -5972,7 +5973,6 @@
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/IMLib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/RedPacket/AlipaySDK",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/RongCloudKit/Rong_Cloud_iOS_IMKit_SDK_v2_8_15_Dev_13ca0/RedPacket/JrmfIMLib",
-					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/BaiduMap_IOSSDK_v3.3.1_Lib",
 					"$(PROJECT_DIR)/NJOceanHeart/7_OtherLib/JrmfIMLib",
 				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
@@ -6063,13 +6063,9 @@
 					"-framework",
 					"\"MOBFoundation\"",
 					"-framework",
-					"\"MOBFoundationEx\"",
-					"-framework",
 					"\"MobileCoreServices\"",
 					"-framework",
 					"\"OpenGLES\"",
-					"-framework",
-					"\"QQConnector\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-framework",
@@ -6086,8 +6082,6 @@
 					"\"SinaWeiboConnector\"",
 					"-framework",
 					"\"SystemConfiguration\"",
-					"-framework",
-					"\"TencentOpenAPI\"",
 					"-framework",
 					"\"UIKit\"",
 					"-framework",

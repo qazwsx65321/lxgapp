@@ -70,7 +70,8 @@ singleton_m(WXRWeiXinObjct)
 
 +(void)initWXSDK{
 
-    [WXApi registerApp:APP_ID];
+//    20260504 remark
+//    [WXApi registerApp:APP_ID];
 }
 
 +(void)WXRPayToPlatformOderNumber:(NSString *)orderno andOrderPrice:(NSString *)price andPlat:(BOOL)isAliPay{
@@ -168,7 +169,11 @@ singleton_m(WXRWeiXinObjct)
             req.timeStamp           = stamp.intValue;
             req.package             = [dict objectForKey:@"package"];
             req.sign                = [dict objectForKey:@"sign"];
-            BOOL isopen =  [WXApi sendReq:req];
+            
+            //    20260504 remark
+            //BOOL isopen =  [WXApi sendReq:req];
+            
+            
 //            BOOL isopen = [WXApi openWXApp];
             //日志输出
             NSLog(@"appid=%@\npartid=%@\nprepayid=%@\nnoncestr=%@\ntimestamp=%ld\npackage=%@\nsign=%@",req.openID,req.partnerId,req.prepayId,req.nonceStr,(long)req.timeStamp,req.package,req.sign );

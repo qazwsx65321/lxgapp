@@ -12,8 +12,9 @@
 #import <JPUSHService.h>
 
 //腾讯开放平台（对应QQ和QQ空间）SDK头文件
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/QQApiInterface.h>
+//20260504 remark
+//#import <TencentOpenAPI/TencentOAuth.h>
+//#import <TencentOpenAPI/QQApiInterface.h>
 #import "Ocean_XDConnectRongCloud.h"
 #import "WXApi.h"
 #import "Ocean_XDTableObject.h"
@@ -107,7 +108,8 @@
                  [ShareSDKConnector connectWeChat:[WXApi class]];
                  break;
              case SSDKPlatformTypeQQ:
-                 [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
+                 //    20260504 remark
+//                 [ShareSDKConnector connectQQ:[QQApiInterface class] tencentOAuthClass:[TencentOAuth class]];
                  break;
              default:
                  break;
